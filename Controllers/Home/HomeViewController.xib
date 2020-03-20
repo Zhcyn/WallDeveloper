@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="桌面背景专家" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCreate" destination="C1N-gD-ou3" id="jdb-ic-iTL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简易壁纸编辑器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nR9-sM-XGW">
+                    <rect key="frame" x="30" y="50" width="315" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                    <color key="textColor" red="0.74509803919999995" green="0.21176470589999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.74509803919999995" green="0.21176470589999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固定,调整大小,旋转,改变位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-S6-Xqq">
+                    <rect key="frame" x="30" y="89.5" width="315" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.1058823529" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-pu-Jgq">
+                    <rect key="frame" x="0.0" y="140.5" width="375" height="140"/>
+                    <color key="backgroundColor" red="0.74509803919999995" green="0.21176470589999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="oAl-9d-Ri0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1N-gD-ou3">
+                    <rect key="frame" x="80" y="310.5" width="215" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="axf-0A-GsK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                    <state key="normal" title="壁纸编辑">
+                        <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleCreateWallpaper:" destination="-1" eventType="touchUpInside" id="9Jf-MQ-NaP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nR9-sM-XGW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="3LV-1r-eja"/>
+                <constraint firstItem="C1N-gD-ou3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="4ds-SD-pZN"/>
+                <constraint firstItem="nb0-pu-Jgq" firstAttribute="top" secondItem="sIJ-S6-Xqq" secondAttribute="bottom" constant="30" id="Hip-4g-OZ0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nb0-pu-Jgq" secondAttribute="trailing" id="IH7-WZ-VyW"/>
+                <constraint firstItem="C1N-gD-ou3" firstAttribute="top" secondItem="nb0-pu-Jgq" secondAttribute="bottom" constant="30" id="OrG-Nx-1g7"/>
+                <constraint firstItem="sIJ-S6-Xqq" firstAttribute="top" secondItem="nR9-sM-XGW" secondAttribute="bottom" constant="8" id="QGv-dg-3d6"/>
+                <constraint firstItem="sIJ-S6-Xqq" firstAttribute="leading" secondItem="nR9-sM-XGW" secondAttribute="leading" id="Z4W-F5-BTA"/>
+                <constraint firstItem="C1N-gD-ou3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="e1A-0q-umg"/>
+                <constraint firstItem="sIJ-S6-Xqq" firstAttribute="centerX" secondItem="nR9-sM-XGW" secondAttribute="centerX" id="ePr-Dp-0z1"/>
+                <constraint firstItem="nb0-pu-Jgq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gTY-ZD-Xtw"/>
+                <constraint firstItem="nR9-sM-XGW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hEI-fw-YeZ"/>
+                <constraint firstItem="nR9-sM-XGW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="nPU-ek-IW5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.57608695652175"/>
+        </view>
+    </objects>
+</document>

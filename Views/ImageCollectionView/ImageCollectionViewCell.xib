@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="WallpaperEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="371"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="371"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrH-4S-uJS">
+                        <rect key="frame" x="5" y="5" width="228" height="361"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XeQ-y2-DeU">
+                        <rect key="frame" x="28.5" y="30" width="181" height="321"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XeQ-y2-DeU" secondAttribute="height" multiplier="9:16" id="q6N-IB-wqB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XeQ-y2-DeU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="616-DX-KoT"/>
+                <constraint firstItem="BrH-4S-uJS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="D9b-FN-94r"/>
+                <constraint firstItem="XeQ-y2-DeU" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Fzb-Ko-VTr"/>
+                <constraint firstAttribute="bottom" secondItem="BrH-4S-uJS" secondAttribute="bottom" constant="5" id="dgG-n3-b2b"/>
+                <constraint firstItem="XeQ-y2-DeU" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="jyx-aU-grL"/>
+                <constraint firstAttribute="trailing" secondItem="BrH-4S-uJS" secondAttribute="trailing" constant="5" id="lBq-tr-0fd"/>
+                <constraint firstItem="BrH-4S-uJS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="yrU-IF-7l2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="238" height="371"/>
+            <connections>
+                <outlet property="imageView" destination="XeQ-y2-DeU" id="f92-Ei-xau"/>
+                <outlet property="viewBackGround" destination="BrH-4S-uJS" id="74K-af-g3Y"/>
+            </connections>
+            <point key="canvasLocation" x="-68.115942028985515" y="134.93303571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
